@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Example</title>
+    <link rel="stylesheet" href="Demo.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="logo">MyWebsite</h2>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="https://www.google.com/">Home</a></li>
+                <li><a href="#" id="about-link">About</a></li>
+                <li><a href="https://chatgpt.com/">Services</a></li>
+                <li><a href="tel:9959713749">Contact</a></li>
+                <li><a href="https://copilot.microsoft.com/">AI Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <h1>Welcome to My Responsive Website</h1>
+        <p>This website adjusts its layout based on the screen size.</p>
+        <p>hello guys use this website for google services and chatGPT</p>
+
+        <!-- About Section -->
+        <section id="about-section" style="display: none;">
+            <h2>About My Responsive Website</h2>
+            <p>Welcome to My Responsive Website!</p>
+            <p>At My Responsive Website, we are dedicated to creating a seamless and engaging user experience across all devices. Whether you're accessing our site from a desktop, tablet, or smartphone, you'll find a design that's intuitive, visually appealing, and easy to navigate.</p>
+            <p>Our mission is to provide high-quality content and services that cater to your needs, while ensuring that our site is accessible and responsive to the diverse ways people access the web today. We believe that a website should be more than just functional; it should also be a pleasure to use.</p>
+
+            <h3>What We Offer:</h3>
+            <ul>
+                <li><strong>Responsive Design:</strong> Our website automatically adjusts to fit any screen size, providing a consistent and optimized experience regardless of the device you're using.</li>
+                <li><strong>User-Friendly Navigation:</strong> With a clear and straightforward layout, you can easily find the information or services you need.</li>
+                <li><strong>Engaging Content:</strong> We are committed to delivering content that is both informative and engaging, keeping you updated and entertained.</li>
+                <li><strong>Innovative Features:</strong> From interactive elements to modern web technologies, we incorporate the latest advancements to enhance your experience.</li>
+            </ul>
+
+            <h3>Our Vision:</h3>
+            <p>To be a leading example of how responsive design can transform the way people interact with websites. We aim to set the standard for user-centric web development, ensuring that every visit to My Responsive Website is a delightful and efficient experience.</p>
+
+            <h3>Our Team:</h3>
+            <p>Behind My Responsive Website is a team of dedicated professionals passionate about web development and design. Our diverse backgrounds and expertise come together to create a unique and innovative web experience for our users. We are committed to continuous learning and improvement, always staying up-to-date with the latest trends and technologies in the industry.</p>
+
+            <h3>Contact Us:</h3>
+            <p>We value your feedback and are always eager to hear from you. Whether you have questions, suggestions, or just want to say hello, feel free to reach out to us. Your insights help us improve and grow, ensuring that we can continue to provide the best possible experience for our users.</p>
+
+            <p>Thank you for visiting My Responsive Website! We hope you enjoy exploring our site as much as we enjoyed creating it. Feel free to reach out to us with any questions, feedback, or suggestions.</p>
+        </section>
+
+    </main>
+
+    <script src="Demo.js"></script>
+
+    <!-- JavaScript for toggling About section -->
+    <script>
+        document.getElementById('about-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            const aboutSection = document.getElementById('about-section');
+            if (aboutSection.style.display === 'none') {
+                aboutSection.style.display = 'block';
+            } else {
+                aboutSection.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
